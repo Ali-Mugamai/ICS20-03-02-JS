@@ -60,9 +60,9 @@
           <table>
             <tr>
               <th>
-                <h2>(((a+b)/2)h)</h2>
+                <h2>(L x W x H) / 3</h2>
                 <img
-                  src="./images/trapezoid_points.jpeg"
+                  src="./images/pyramid.png"
                   alt="trapezoid"
                   width="75%"
                   height="auto"
@@ -72,32 +72,32 @@
           </table>
           <!-- Simple Textfield -->
           <form action="#">
-            <p>a (top of trapezoid)</p>
+            <p>l (length of cube)</p>
             <div class="mdl-textfield mdl-js-textfield">
               <input
                 class="mdl-textfield__input"
                 type="text"
                 pattern="-?[0-9]*(\.[0-9]+)?"
-                id="top"
+                id="length"
               />
-              <label class="mdl-textfield__label" for="top"
-                >top of trapezoid ...</label
+              <label class="mdl-textfield__label" for="length"
+                >length of cube ...</label
               >
               <span class="mdl-textfield__error">Input is not a number!</span>
             </div>
           </form>
           <!-- Numeric Textfield -->
           <form action="#">
-            <p>b (base)</p>
+            <p>w (width)</p>
             <div class="mdl-textfield mdl-js-textfield">
               <input
                 class="mdl-textfield__input"
                 type="text"
                 pattern="-?[0-9]*(\.[0-9]+)?"
-                id="base"
+                id="width"
               />
-              <label class="mdl-textfield__label" for="base"
-                >base of trapezoid ...</label
+              <label class="mdl-textfield__label" for="width"
+                >width ...</label
               >
               <span class="mdl-textfield__error">Input is not a number!</span>
             </div>
@@ -113,7 +113,7 @@
                 id="height"
               />
               <label class="mdl-textfield__label" for="height"
-                >height of trapezoid ...</label
+                >height of cube ...</label
               >
               <span class="mdl-textfield__error">Input is not a number!</span>
             </div>
