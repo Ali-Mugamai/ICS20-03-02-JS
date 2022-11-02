@@ -7,8 +7,8 @@
 "use strict"
 
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS20-03-01-JS/sw.js", {
-    scope: "/ICS20-03-01-JS/",
+  navigator.serviceWorker.register("/ICS20-03-02-JS/sw.js", {
+    scope: "/ICS20-03-02-JS/",
   })
 }
 /**
@@ -17,10 +17,10 @@ if (navigator.serviceWorker) {
 function calculate() {
   // input
   const height = parseInt(document.getElementById("height").value)
-  const base = parseInt(document.getElementById("base").value)
-  const top = parseInt(document.getElementById("top").value)
+  const width = parseInt(document.getElementById("width").value)
+  const length = parseInt(document.getElementById("length").value)
   // process
-  const area = ((base + top) / 2) * height
+  const area = (height * width * length) / 3
   // output
-  document.getElementById("area").innerHTML = "Area is: " + area + " cm²"
+  document.getElementById("area").innerHTML = "Area is: " + area + " cm³"
 }
