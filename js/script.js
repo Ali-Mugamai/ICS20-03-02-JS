@@ -20,7 +20,7 @@ function calculate() {
   const width = parseInt(document.getElementById("width").value)
   const length = parseInt(document.getElementById("length").value)
   // process
-  const area = (height * width * length) / 3
+  const volume = (height * width * length) / 3
   // output
-  document.getElementById("area").innerHTML = "Area is: " + area + " cm³"
+  document.getElementById("volume").innerHTML = "Area is: " + volume + " cm³"
 }
